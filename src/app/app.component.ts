@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -6,8 +6,26 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppComponent {
-  title = 'account-plan';
+  days = [
+    {
+      index: 1,
+      name: '1'
+    },
+    {
+      index: 1,
+      name: '1'
+    },
+    {
+      index: 1,
+      name: '1'
+    },
+    {
+      index: 1,
+      name: '1'
+    }
+  ];
 }
